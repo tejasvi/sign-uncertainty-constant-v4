@@ -1,0 +1,12 @@
+SignUnc.upperK : SignUnc.UpperStatement
+def SignUnc.UpperStatement : Prop :=
+SignUnc.Aplus2 ≤ ENNReal.ofReal ((5509 / 10000) ^ 2) ∧ SignUnc.C611 ≤ ENNReal.ofReal ((5509 / 10000) ^ 2)
+@SignUnc.A_pos_classA : ∀ {f : ℝ → ℝ}, SignUnc.ClassA f → 0 < SignUnc.A fun x => ↑(f x)
+@SignUnc.A_ft_pos_classA : ∀ {f : ℝ → ℝ}, SignUnc.ClassA f → 0 < SignUnc.A (SignUnc.ft f)
+@SignUnc.A_pos_class611 : ∀ {f : ℝ → ℝ}, SignUnc.Class611 f → 0 < SignUnc.A fun x => ↑(f x)
+@SignUnc.A_ft_pos_class611 : ∀ {f : ℝ → ℝ}, SignUnc.Class611 f → 0 < SignUnc.A (SignUnc.ft f)
+'SignUnc.A_pos_classA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignUnc.A_ft_pos_classA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignUnc.A_pos_class611' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignUnc.A_ft_pos_class611' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignUnc.upperK' depends on axioms: [propext, Classical.choice, Quot.sound]
